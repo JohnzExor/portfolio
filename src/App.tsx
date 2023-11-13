@@ -1,15 +1,18 @@
 import About from "@/pages/About";
-import Header from "@/components/Header";
 import Contact from "@/pages/Contact";
 import Projects from "./pages/Projects";
 
+import background from "@/assets/background.png";
+
 const App = () => {
   return (
-    <div>
-      <Header />
-      <About />
-      <Projects />
-      <Contact />
+    <div className="text-white">
+      <img src={background} className=" fixed object-cover h-screen w-full" />
+      <div className=" backdrop-blur-md">
+        <About />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   );
 };
