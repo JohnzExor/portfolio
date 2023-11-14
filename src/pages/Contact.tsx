@@ -3,12 +3,12 @@ import contact from "@/assets/contact.svg";
 const Contact = () => {
   return (
     <div
-      className=" h-fit flex items-center justify-center gap-32"
+      className=" h-fit flex flex-col md:flex-row items-center p-6 justify-center md:gap-32"
       id="contact"
     >
-      <img src={contact} className=" w-1/4 hidden md:block" />
+      <img src={contact} className=" md:w-1/4 w-1/2 md:hidden " />
 
-      <form className=" flex flex-col p-8 items-center gap-4 w-full md:w-1/5 rounded-xl">
+      <form className=" flex flex-col  items-center gap-4 w-full md:w-1/5 rounded-xl">
         <h1 className=" text-5xl">Contact me</h1>
         <input
           type="text"
@@ -26,11 +26,12 @@ const Contact = () => {
         />
         <button
           type="submit"
-          className=" border w-full p-2 bg-white font-bold rounded-md bg-opacity-10"
+          className=" border w-full p-2 bg-white font-bold rounded-md bg-opacity-10 hover:bg-opacity-60 hover:duration-500 hover:text-black hover:ease-in"
         >
           Send
         </button>
       </form>
+      <img src={contact} className=" w-1/4 hidden md:block" />
     </div>
   );
 };
