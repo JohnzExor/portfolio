@@ -10,7 +10,7 @@ const Projects = () => {
       <h1 className="text-5xl">Projects</h1>
       <div className="flex justify-center gap-32">
         <img src={projects} className=" w-1/4 hidden md:block" />
-        <div className=" border p-2 rounded-xl flex flex-col gap-2 md:w-1/3 bg-gray-900">
+        <div className=" border p-2 rounded-xl flex flex-col gap-2 md:w-1/3">
           <h1 className=" pl-2">Lumine</h1>
           <img src={lumine} className=" rounded-xl w-full" />
         </div>

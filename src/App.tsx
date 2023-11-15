@@ -3,21 +3,19 @@ import Contact from "@/pages/Contact";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 
-import background from "@/assets/background.jpg";
 import Header from "./components/Header";
+import { ThemeProvider } from "./components/theme/Theme-Provider";
 
 const App = () => {
   return (
-    <div className="text-white">
-      <img src={background} className=" fixed object-cover h-screen w-full" />
-      <div className=" backdrop-blur-3xl">
-        <Header />
-        <LandingPage />
-        <About />
-        <Projects />
-        <Contact />
-      </div>
-    </div>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      {/* img src={background} className=" fixed object-cover h-screen w-full" /> */}
+      <Header />
+      <LandingPage />
+      <About />
+      <Projects />
+      <Contact />
+    </ThemeProvider>
   );
 };
 

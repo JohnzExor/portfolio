@@ -31,7 +31,7 @@ const LandingPage = () => {
       className=" w-full h-fit flex flex-col md:flex-row items-center justify-center p-6 gap-4"
       id="about"
     >
-      <div className="flex flex-col gap-4 md:px-52 md:mt-16 ">
+      <div className="flex flex-col gap-4 md:px-52 ">
         <div>
           <motion.h1
             className=" text-5xl md:text-6xl"
@@ -78,13 +78,13 @@ const LandingPage = () => {
             <div className=" flex gap-2">
               <a
                 href="#projects"
-                className=" border rounded-2xl p-2 px-4 hover:bg-opacity-70 hover:bg-white duration-500 hover:text-black"
+                className=" border rounded-2xl p-2 px-4 hover:bg-black hover:text-white dark:hover:bg-opacity-70 dark:hover:bg-white duration-500 dark:hover:text-black hover:ease-in"
               >
                 Projects
               </a>
               <a
                 href="#contact"
-                className=" border rounded-2xl p-2 px-4 hover:bg-opacity-70 hover:bg-white duration-500 hover:text-black"
+                className=" border rounded-2xl p-2 px-4 hover:bg-black hover:text-white dark:hover:bg-opacity-70 dark:hover:bg-white duration-500 dark:hover:text-black hover:ease-in"
               >
                 Contact
               </a>

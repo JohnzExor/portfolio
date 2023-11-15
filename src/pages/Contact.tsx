@@ -26,7 +26,7 @@ const Contact = () => {
         />
         <button
           type="submit"
-          className=" border w-full p-2 bg-white font-bold rounded-md bg-opacity-10 hover:bg-opacity-60 hover:duration-500 hover:text-black hover:ease-in"
+          className=" border w-full p-2 font-bold rounded-md bg-opacity-10 hover:bg-black hover:text-white dark:hover:bg-opacity-70 dark:hover:bg-white duration-500 dark:hover:text-black hover:ease-in"
         >
           Send
         </button>
